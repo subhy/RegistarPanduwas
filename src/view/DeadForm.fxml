@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="980.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DeadFormController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="980.0">
+            <fill>
+                <LinearGradient endX="0.04807692307692308" endY="0.7115384615384616">
+                    <stops>
+                        <Stop color="#1598d6" />
+                        <Stop color="WHITE" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </fill></Rectangle>
+        <ImageView id="imgHome" fitHeight="53.0" fitWidth="55.0" layoutX="22.0" layoutY="16.0" onMouseClicked="#navigateToHome" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assert/Home.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+        <Label layoutX="95.0" layoutY="24.0" prefHeight="38.0" prefWidth="257.0" text="Death Certificate">
+            <font>
+                <Font name="Lucida Sans Demibold" size="27.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtName" labelFloat="true" layoutX="17.0" layoutY="191.0" onAction="#txtName_onAction" onKeyPressed="#txtName_onKeyPressed" prefHeight="28.0" prefWidth="390.0" promptText="Name" />
+        <JFXTextField fx:id="txtFName" labelFloat="true" layoutX="17.0" layoutY="293.0" onAction="#txtFName_onAction" onKeyPressed="#txtFName_onKeyPressed" prefHeight="28.0" prefWidth="390.0" promptText="Age" />
+        <JFXTextField fx:id="txtMName" labelFloat="true" layoutX="17.0" layoutY="341.0" onAction="#txtMName_onAction" onKeyPressed="#txtMName_onKeyPressed" prefHeight="28.0" prefWidth="390.0" promptText="Place" />
+        <JFXButton id="btnSave" fx:id="btnSave" layoutX="67.0" layoutY="441.0" onAction="#btnSave_OnAction" prefHeight="28.0" prefWidth="74.0" style="-fx-cursor: hand; -fx-background-color: #61EA30;" text="Save" />
+        <JFXButton id="btnDelete" fx:id="btnDelete" layoutX="230.0" layoutY="441.0" onAction="#btnDelete_OnAction" prefHeight="28.0" prefWidth="74.0" style="-fx-cursor: hand; -fx-background-color: #ED5511;" text="Delete" />
+        <JFXTextField fx:id="txtBCNo" labelFloat="true" layoutX="15.0" layoutY="140.0" onAction="#txtBCNo_onAction" onKeyPressed="#txtBCNo_onKeyPressed" prefHeight="28.0" prefWidth="390.0" promptText="Death Certificate No" />
+      <JFXTextField fx:id="txtBNo" labelFloat="true" layoutX="16.0" layoutY="392.0" onAction="#txtBNo_onAction" onKeyPressed="#txtBNo_onKeyPressed" prefHeight="28.0" prefWidth="390.0" promptText="Book No" />
+      <JFXDatePicker fx:id="jdc_bod" layoutX="96.0" layoutY="240.0" prefHeight="29.0" prefWidth="307.0" />
+      <Label layoutX="22.0" layoutY="243.0" prefHeight="28.0" prefWidth="99.0" text="Date" />
+      <JFXButton id="btnSave" fx:id="btnUpdate" layoutX="149.0" layoutY="441.0" onAction="#btnUpdate_OnAction" prefHeight="28.0" prefWidth="74.0" style="-fx-cursor: hand; -fx-background-color: #E5EA30;" text="Update" />
+      <JFXTextField fx:id="txtSearch" layoutX="480.0" layoutY="135.0" onAction="#txtSearch_onAction" onKeyPressed="#txtSearch_keyPressed" prefHeight="28.0" prefWidth="492.0" promptText="Type here to search" />
+      <JFXButton id="btnSave" fx:id="btnNew" layoutX="886.0" layoutY="53.0" onAction="#btnNew_OnAction" prefHeight="28.0" prefWidth="74.0" style="-fx-cursor: hand; -fx-background-color: #7C80EA;" text="New" />
+      <TableView fx:id="tblDeathSearch" layoutX="480.0" layoutY="179.0" prefHeight="262.0" prefWidth="492.0">
+         <columns>
+            <TableColumn prefWidth="63.0" text="DC No" />
+            <TableColumn prefWidth="133.0" text="Name" />
+            <TableColumn prefWidth="173.0" text="Age" />
+            <TableColumn prefWidth="105.0" text="Place" />
+         </columns>
+      </TableView>
+      <Label fx:id="lblType" layoutX="786.0" layoutY="15.0" prefHeight="18.0" prefWidth="170.0" textAlignment="RIGHT" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginFormController">
+   <children>
+      <ImageView fx:id="imgProPic" fitHeight="355.0" fitWidth="385.0" layoutX="15.0" layoutY="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assert/login.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnLogin" layoutX="15.0" layoutY="325.0" onAction="#btnLogin_onAction" onKeyPressed="#btnLogin_onKeyPressed" prefHeight="28.0" prefWidth="385.0" style="-fx-background-color: #7A79E2;" text="Login" textFill="WHITE" />
+      <JFXTextField fx:id="txtName" labelFloat="true" layoutX="67.0" layoutY="242.0" onKeyPressed="#txtName_onKeyPressed" prefHeight="28.0" prefWidth="281.0" promptText="Username" />
+      <JFXPasswordField fx:id="pfPass" labelFloat="true" layoutX="65.0" layoutY="286.0" onKeyPressed="#pfPass_onKeyPressed" prefHeight="28.0" prefWidth="281.0" promptText="Password" />
+      <JFXButton fx:id="btnCancel" layoutX="13.0" layoutY="363.0" onAction="#btnCancel_onAction" onKeyPressed="#btnCancel_onKeyPressed" prefHeight="28.0" prefWidth="385.0" style="-fx-background-color: #F32F04#F32F04;" text="Cancel" textFill="WHITE" />
+   </children>
+</AnchorPane>

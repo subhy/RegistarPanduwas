@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: sample.Main
+Class-Path: mysql-connector-java-5.1.49.jar jfoenix-8.0.10.jar
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="438.0" prefWidth="600.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NavFormController">
+    <children>
+        <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="20.0" prefHeight="17.0" prefWidth="570.0" text="Registrar Division&#10;&#10;&#10;" textAlignment="CENTER" textFill="#e37b40">
+            <font>
+                <Font name="System Bold" size="23.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="imgOrder" fitHeight="80.0" fitWidth="80.0" layoutX="80.0" layoutY="165.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true">
+            <image>
+                <Image url="@../assert/BC.jpeg" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+        <ImageView fx:id="imgViewOrders" fitHeight="80.0" fitWidth="80.0" layoutX="254.0" layoutY="165.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assert/MC.jpeg" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+        <Separator layoutX="29.0" layoutY="123.0" prefHeight="0.0" prefWidth="542.0" />
+        <Label fx:id="lblMenu" alignment="CENTER" layoutX="11.0" layoutY="318.0" prefHeight="26.0" prefWidth="577.0" text="Welcome" textAlignment="CENTER" textFill="#0a39f7">
+            <font>
+                <Font name="DejaVu Sans Mono Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblDescription" alignment="CENTER" layoutX="14.0" layoutY="348.0" prefHeight="16.0" prefWidth="577.0" text="Please select one of above main operations to proceed">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="8.0" layoutY="405.0" prefHeight="16.0" prefWidth="577.0" text="Copyright 2021 Subhy Soft - 1.0.0 Version">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Label>
+        <ProgressIndicator fx:id="pgb" layoutX="268.0" layoutY="282.0" prefHeight="29.0" prefWidth="58.0" />
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="52.0" prefHeight="17.0" prefWidth="570.0" text="Divisional Secretarial Office&#10;&#10;&#10;&#10;" textAlignment="CENTER" textFill="#4a42e3">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="73.0" prefHeight="17.0" prefWidth="570.0" text="Panduwasnuwara West&#10;&#10;&#10;&#10;" textAlignment="CENTER" textFill="#4a42e3">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgOrder1" fitHeight="80.0" fitWidth="80.0" layoutX="459.0" layoutY="161.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true">
+         <image>
+            <Image url="@../assert/Dc.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgLogout" fitHeight="80.0" fitWidth="93.0" layoutX="492.0" layoutY="333.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/logout.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblType" layoutX="244.0" layoutY="380.0" prefHeight="18.0" prefWidth="105.0" textAlignment="CENTER" />
+    </children>
+</AnchorPane>

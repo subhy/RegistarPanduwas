@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact name="Registar:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Registar_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Registar.jar">
+        <element id="module-output" name="Registar" />
+      </element>
+      <element id="library" level="project" name="mysql-connector-java-5.1.49" />
+      <element id="library" level="project" name="jfoenix-8.0.10" />
+    </root>
+  </artifact>
+</component>
